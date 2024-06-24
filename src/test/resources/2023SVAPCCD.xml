@@ -1261,8 +1261,9 @@ This sample is designed to be used in conjunction with the HL7 CDA® R2 IG: C-CD
                                         displayName="Because of a physical, mental, or emotional condition, do you have serious difficulty concentrating, remembering, or making decisions??"
                                         codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                                     <statusCode code="completed"/>
-                                    <value xsi:type="CD" code="LA33-6" displayName="Yes"
-                                        codeSystem="2.16.840.1.113883.6.1"/>
+                                    <value xsi:type = "ED">
+                                        <reference value = "#social_hist_obs_rsp-3.1"/>
+                                    </value>
                                 </observation>
                             </entryRelationship>
                             <entryRelationship typeCode="COMP">
